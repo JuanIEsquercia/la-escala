@@ -12,38 +12,92 @@
 </head>
 
 <body>
-    <div class="miDiv">
-        <h1>este es mi titulo</h1>
-    </div>
-    <!-- <section class="container-fluid section__index">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque labore perferendis nihil
-                        consequuntur? Sint reprehenderit recusandae harum ut, perspiciatis velit impedit ipsum alias quo
-                        modi amet. Reprehenderit impedit ipsum asperiores?</p>
-                    <div class="contenedor">
-                        <img class="scroll" src="./multimedia/favicon.svg" alt="">
-                        <img class="scroll" src="./multimedia/favicon.svg" alt="">
-                        <img class="scroll" src="./multimedia/favicon.svg" alt="">
-                        <img class="scroll" src="./multimedia/favicon.svg" alt="">
-                        <img class="scroll" src="./multimedia/favicon.svg" alt="">
-                    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar navegador__div position-fixed container-fluid">
+            <div class="container-fluid">
 
-                </section> -->
+                <a class="navbar-brand" href="#">La Escala</a>
 
-
-    <footer class="footer__grilla container-fluid">
-        <div class="footer__div text-center">
-            <ul class="lista__footer">
-                <li class="item__footer">links de contactos</li>
-                <li class="item__footer">links de contactos</li>
-                <li class="item__footer">links de contactos</li>
-                <li class="item__footer">links de contactos</li>
-            </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-2" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/departamentos.html">Departamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/informacion.html">Informacion</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="navegador__espaciado mb-5 container-fluid"> <!--Espaciado para poder trabajar con nav fixed-->
         </div>
+    </header>
+
+    <main>
+        <div class="contenedor__general">
+                <h2 class="text-center fs-1 mb-3">La Escala Alojamiento</h2>
+            <div class="container row align-center presentacion__index m-4 main__index">
+                <img class="col-4 m-2" src="./multimedia/viajeros.svg" alt="soluciones de viaje">
+                <div class="col-7 m-2">
+                    <h3 class="text-center mb-3">Servicios</h3>
+                    <p class="text-center text-break fw-normal">Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Praesentium, quaerat! Quisquam eos, doloremque sit modi maiores veritatis officia fugiat
+                        distinctio similique, omnis dolorum esse a eveniet quibusdam nemo ea adipisci?Lorem ipsum, dolor
+                        sit amet consectetur adipisicing elit. Beatae, pariatur quos eius sapiente voluptate repudiandae
+                        iusto facilis velit possimus molestiae enim perspiciatis? Obcaecati temporibus perspiciatis quas
+                        consectetur amet eum veniam!</p>
+                </div>
+            </div>
+            <div class="container row align-center presentacion__index m-4  main__index">
+                <div class="col-7 m-2">
+                    <h3 class="text-center mb-3">Posicionamiento web</h3>
+                    <p class="text-center text-break fw-normal">Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Praesentium, quaerat! Quisquam eos, doloremque sit modi maiores veritatis officia fugiat
+                        distinctio similique, omnis dolorum esse a eveniet quibusdam nemo ea adipisci?Lorem ipsum, dolor
+                        sit amet consectetur adipisicing elit. Beatae, pariatur quos eius sapiente voluptate repudiandae
+                        iusto facilis velit possimus molestiae enim perspiciatis? Obcaecati temporibus perspiciatis quas
+                        consectetur amet eum veniam!</p>
+                </div>
+                <img class="col-4 m-2" src="./multimedia/web.svg" alt="soluciones de viaje">
+            </div>
+            <div class="container row align-center presentacion__index m-4  main__index">
+                <img class="col-4 ms-2" src="./multimedia/pagos.svg" alt="soluciones de viaje">
+                <div class="col-7 m-2">
+                    <h3 class="text-center mb-3">Soluciones de pago</h3>
+                    <p class="text-center text-break fw-normal">Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Praesentium, quaerat! Quisquam eos, doloremque sit modi maiores veritatis officia fugiat
+                        distinctio similique, omnis dolorum esse a eveniet quibusdam nemo ea adipisci?Lorem ipsum, dolor
+                        sit amet consectetur adipisicing elit. Beatae, pariatur quos eius sapiente voluptate repudiandae
+                        iusto facilis velit possimus molestiae enim perspiciatis? Obcaecati temporibus perspiciatis quas
+                        consectetur amet eum veniam!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <ul class="lista__pie d-flex justify-content-around w-100 shadow-lg p-3 bg-body rounded">
+            <li class=""><iconify-icon icon="logos:whatsapp-icon" class="me-2"></iconify-icon><a href="https://wa.me/message/AOQY3O7H3V6KJ1" class="link__pie me-2" target="_blank">Whatsapp</a></li>
+            <li class=""><iconify-icon icon="skill-icons:instagram" class="me-2"></iconify-icon><a href="https://www.instagram.com/laescalaalojamientos/" class="link__pie me-2"
+                    target="_blank">Instagram</a></li>
+            <li class=""><a href="https://gestopia.com/" class="link__pie me-2" target="_blank"><iconify-icon icon="twemoji:letter-g" class="me-2"></iconify-icon>Gestopia</a></li>
+        </ul>
     </footer>
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
 
 </html>

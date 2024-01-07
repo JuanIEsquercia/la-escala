@@ -1,80 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,700&display=swap');
 
-:root{
-    --font-family:'Raleway', sans-serif;
-    --color-principal: #F2CFC2;
-    --color-secundario: #F27B50;
-    --color-terciario: #F2B872;
-    --color-negro:#0D0D0D;
-    --color-blanco:#F2F2F2;
-    --encabezado: 32px;
-    --texto-parrafo: 16px;
-}
-/* VARIABLES REUTILIZABLES */
-
-/* *{
-    padding: 0;
-    margin: 0;
-    box-sizing:border-box;
-    font-family: var(--font-family);
-}
-
-/* GRILLA DE PAGINA */
-/* .grilla__header{
-    border-bottom: var(--color-secundario) solid;
-}
-
-@media (min-width: 450px) {
-    .titulo__page {
-        background-color: #543f24;
-    }
-} */ 
-
-/* .contenedor{
-    max-width: 420px;
-    width: 100%;
-    height: 300px;
-    background-color: #F2B872 ;
-    overflow-x: auto;
-    display: flex;
-    scroll-snap-type: x mandatory;
-    border: black 10px solid;
-    margin: 0 auto;
-
-}
-
-.scroll{
-    width: 100%;
-    scroll-snap-align: center;
-
-}
-
-::backdrop{
-
-} */
-
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.miDiv{
-    height: 400px;
-    width: 50%;
-    background-color: #F2B872;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 50px;
-    background-image: url(../multimedia/reshot-illustration-geography-illustration-SXDYUFM93H.png);
-    background-size: cover;
-    background-position: center;
+:root {
+    --texto: 'Raleway', sans-serif;
+    --titulos-computadora: 36px;
+    --texto-computadora: 20px;
+    --titulos-responsive: 22px;
+    --texto-responsive: 16px;
+    --color-primario:#3586ccb6;
+    --color-secundario:#CC9947;
+    --color-titulos:#6E685E;
+    --color-background:#ad99781e;
 }
 
-h1{
-    color: green;
-    line-height: 400px;
-    height: 100%;
-    text-shadow: 0 0 5px black;
-    /* backdrop-filter: blur(100px); */
-    /* backdrop-filter: invert(100%); */
-    backdrop-filter: grayscale(100%);
+/* estilos desktop */
+
+.navegador__div{
+    background-color: var(--color-primario);
+    font-weight: 600;
+    box-sizing: content-box;  
+    z-index: 100;
+}
+.navegador__espaciado{
+    background-color: var(--color-primario);
+    height: 100px;
+}
+.contenedor__general{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.main__index{
+    border-bottom: solid 2px #6E685E;
+    box-sizing: border-box;
+    padding: 3%;
+}
+.main__index:hover{
+    background-color: var(--color-background);
+    border: 3px var(--color-primario) solid;
+    border-radius: 4%;
+    transition: background-color 3s;
+}
+.lista__pie{
+    list-style: none;
+}
+.link__pie{
+    color: var(--color-primario);
+    text-decoration: none;
+}
+.contenedor__departamentos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor__carrusel{
+    z-index: 10;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 7%;
+    border-bottom: var(--color-primario) solid;
+    padding: 4%;
+}
+.color__boton{
+    background-color: var(--color-secundario);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, .5);
+}
+.box__nosotros{
+    background-color:var(--color-secundario);
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    height: 150px;
+}
+.box__nosotros--dos{
+    background-color:var(--color-secundario);
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    height: 150px;
+}
+
+.box__nosotros:hover{
+    background-color: var(--color-primario);
+}
+.box__nosotros--dos:hover{
+    background-color: var(--color-primario);
+}
+
+.box__nosotros h4{
+    color: black;
+}
+.grilla__informacion{
+    display: grid;
+    grid-template-areas: 
+    "uno dos tres"
+    "cuatro cinco seis"
+    "siete ocho nueve";
+    gap: 10px;
+}
+
+.card__uno{
+    grid-area: uno;
+}
+.card__dos{
+    grid-area: dos;
+}
+.card__tres{
+    grid-area: tres;
+}
+.card__cuatro{
+    grid-area: cuatro;
+}
+.card__cinco{
+    grid-area: cinco;
+}
+.card__seis{
+    grid-area: seis;
+}
+.card__hover:hover{
+    background-color: var(--color-primario);
+    color: white;
 }
