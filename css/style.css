@@ -15,9 +15,9 @@
     --color-primario:#3586ccb6;
     --color-secundario:#CC9947;
     --color-titulos:#6E685E;
-    --color-background:#ad99781e;
-}
+    --color-background: #D9AFD9;
 
+}
 /* estilos desktop */
 
 .navegador__div{
@@ -64,7 +64,7 @@
 }
 .contenedor__carrusel{
     z-index: 10;
-    text-align: center;
+    text-align: center; 
     width: 70%;
     margin-left: 15%;
     margin-bottom: 7%;
