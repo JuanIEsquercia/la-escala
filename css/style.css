@@ -103,7 +103,9 @@
     "cuatro cinco seis"
     "siete ocho nueve";
     gap: 10px;
+    
 }
+
 
 .card__uno{
     grid-area: uno;
@@ -126,4 +128,22 @@
 .card__hover:hover{
     background-color: var(--color-primario);
     color: white;
+}
+
+/* RESPONSIVE PARA CELULARES Y TABLETS */
+
+@media  (max-width: 700px) {
+    .grilla__informacion {
+        display: flex;
+        flex-direction: column ;
+    }
+    .imagen__index{
+        display: none;
+    }
+    .box__nosotros{
+        display: none;
+    }
+    .box__nosotros--dos{
+        display: none;
+    }
 }
