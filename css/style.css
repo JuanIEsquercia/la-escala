@@ -137,6 +137,11 @@
         display: flex;
         flex-direction: column ;
     }
+    .presentacion__index{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
     .imagen__index{
         display: none;
     }
