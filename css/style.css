@@ -74,6 +74,7 @@
 .color__boton{
     background-color: var(--color-secundario);
     box-shadow: 0 15px 15px rgba(0, 0, 0, .5);
+    z-index: 20;
 }
 .box__nosotros{
     background-color:var(--color-secundario);
@@ -128,6 +129,34 @@
 .card__hover:hover{
     background-color: var(--color-primario);
     color: white;
+    
+}
+.form__flex{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--texto);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+.i__form{
+    margin-top: 5px;
+}
+.boton__form{
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    border-bottom: 4px solid #B721FF;
+    transition: 0.3s;
+    box-shadow: 0px 3px 5px 0px #21D4FD;
+    width: 30%;
+    color: white;
+
+}
+.boton__form:hover{
+    box-shadow: 0 0 rgba(0, 0, 0, 0.4);
+    border-bottom-width: 2px;
+    transform: translateY(2px);
 }
 
 /* RESPONSIVE PARA CELULARES Y TABLETS */
@@ -150,5 +179,8 @@
     }
     .box__nosotros--dos{
         display: none;
+    }
+    .boton__form{
+        box-shadow: 0px 3px 5px 0px #21D4FD;
     }
 }
